@@ -38,7 +38,7 @@ Passos executados:
 
 2 - Criação do arquivo navigation.js em rotas;
 
-3 - Substituição da chamada do componente Home em App.js pelo Navigation do arquivo navigation.js
+3 - Substituição da chamada do componente Home em App.js pelo Navigation do arquivo navigation.js;
 
 4 - Execução do comando para importar o stack navigation:
 ````
@@ -47,11 +47,18 @@ npm install @react-navigation/stack
 
 5 - Criação da const Stack em navigation.js;
 
-6 - Remoção dos títulos das screens no arquivo navigation.js
+6 - Remoção dos títulos das screens no arquivo navigation.js;
 
 7 - Implementação do funcionamento do Botão "Login" na página Home:
 - Adicionar o parâmetro { navigation } a função Home();
 - Acrescentar ao "TouchableOpacity" de Login -> onPress={() => navigation.navigate('Login')};
 
-8 - Corrigir a importação do TouchableOpacity na página de Login
+8 - Corrigir a importação do TouchableOpacity na página de Login;
+
+9 - Execução do comando para importar o Botton Tab Navigator:
+````
+npm install @react-navigation/bottom-tabs
+````
+
+10 - Crie a const TabRoutes em navigation.js;
 

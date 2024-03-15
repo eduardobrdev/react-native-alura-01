@@ -2,8 +2,21 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../paginas/Home";
 import Login from "../paginas/Login";
+import ListaPets from "../paginas/ListaPets"
+import Mensagem from "../paginas/Mensagem"
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 const Stack = createStackNavigator()
+const Tab = createBottomTabNavigator()
+
+function TabRoutes() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="ListaPets" component={ListaPets}/>
+      <Tab.Screen name="Mensagem" component={Mensagem}/>
+    </Tab.Navigator>
+  )
+}
 
 export default function Navigation() {
   return (
@@ -23,7 +36,10 @@ export default function Navigation() {
             headerShown: false
           }}
         />
-        <Stack.Screen name="Login" component={Login}/>
+        <Stack.Screen
+          name="Login"
+          component={Login}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   )
