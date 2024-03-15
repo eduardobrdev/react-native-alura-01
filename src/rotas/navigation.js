@@ -4,6 +4,7 @@ import Home from "../paginas/Home";
 import Login from "../paginas/Login";
 import ListaPets from "../paginas/ListaPets"
 import Mensagem from "../paginas/Mensagem"
+import Sobre from "../paginas/Sobre"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Image } from "react-native";
 
@@ -70,6 +71,10 @@ export default function Navigation() {
         <Stack.Screen
           name="Tab"
           component={TabRoutes}
+        />
+        <Stack.Screen
+          name="Sobre"
+          component={Sobre}
         />
       </Stack.Navigator>
     </NavigationContainer>
