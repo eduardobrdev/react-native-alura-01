@@ -32,6 +32,14 @@ function TabRoutes() {
       <Tab.Screen
         name="Mensagem"
         component={Mensagem}
+        options={{
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/mensagens.png')}
+              style={{width: 24, height: 24}}  
+            />
+          )
+        }}
       />
     </Tab.Navigator>
   )
