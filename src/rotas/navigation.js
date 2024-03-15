@@ -5,6 +5,7 @@ import Login from "../paginas/Login";
 import ListaPets from "../paginas/ListaPets"
 import Mensagem from "../paginas/Mensagem"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Image } from "react-native";
 
 const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator()
@@ -16,8 +17,22 @@ function TabRoutes() {
         headerShown: false
       }}
     >
-      <Tab.Screen name="ListaPets" component={ListaPets}/>
-      <Tab.Screen name="Mensagem" component={Mensagem}/>
+      <Tab.Screen
+        name="Lista de Pets"
+        component={ListaPets}
+        options={{
+          tabBarIcon: () => (
+            <Image
+              source={require('../assets/pets-green.png')}
+              style={{width: 24, height: 24}}
+            />
+          )
+        }}
+      />
+      <Tab.Screen
+        name="Mensagem"
+        component={Mensagem}
+      />
     </Tab.Navigator>
   )
 }
