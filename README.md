@@ -46,3 +46,12 @@ npm install @react-navigation/stack
 ````
 
 5 - Criação da const Stack em navigation.js;
+
+6 - Remoção dos títulos das screens no arquivo navigation.js
+
+7 - Implementação do funcionamento do Botão "Login" na página Home:
+- Adicionar o parâmetro { navigation } a função Home();
+- Acrescentar ao "TouchableOpacity" de Login -> onPress={() => navigation.navigate('Login')};
+
+8 - Corrigir a importação do TouchableOpacity na página de Login
+
