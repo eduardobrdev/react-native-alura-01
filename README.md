@@ -24,3 +24,25 @@ Depois, seleciona a opção "a" no terminal para abrir o emulador.
 
 ## 📚 Mais Informações sobre o Curso
 O Adopet é uma rede social fictícia utilizada nesse curso da Alura. A ideia principal é implementar a navegação de uma aplicação com React Navigation e desbravar os conceitos de navegação do tipo Stack, Tab e Drawer.
+
+## Durante o Curso
+Foram instaladas as seguintes bibliotecas:
+````
+npm install @react-navigation/native
+npx expo install react-native-screens react-native-safe-area-context
+````
+
+Passos executados:
+
+1 - Criação da pasta rotas em src;
+
+2 - Criação do arquivo navigation.js em rotas;
+
+3 - Substituição da chamada do componente Home em App.js pelo Navigation do arquivo navigation.js
+
+4 - Execução do comando para importar o stack navigation:
+````
+npm install @react-navigation/stack
+````
+
+5 - Criação da const Stack em navigation.js;
