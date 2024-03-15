@@ -62,3 +62,6 @@ npm install @react-navigation/bottom-tabs
 
 10 - Crie a const TabRoutes em navigation.js;
 
+11 - Acrescente o TabRoutes como uma Stack.Screen dentro do Stack.Navigator;
+
+12 - Acrescente so TouchableOpacity da página de Login o onPress={() => navigation.navigate('Tab')};

@@ -11,7 +11,11 @@ const Tab = createBottomTabNavigator()
 
 function TabRoutes() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false
+      }}
+    >
       <Tab.Screen name="ListaPets" component={ListaPets}/>
       <Tab.Screen name="Mensagem" component={Mensagem}/>
     </Tab.Navigator>
@@ -39,6 +43,10 @@ export default function Navigation() {
         <Stack.Screen
           name="Login"
           component={Login}
+        />
+        <Stack.Screen
+          name="Tab"
+          component={TabRoutes}
         />
       </Stack.Navigator>
     </NavigationContainer>
